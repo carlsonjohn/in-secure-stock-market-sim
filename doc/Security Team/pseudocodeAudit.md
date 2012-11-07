@@ -7,8 +7,7 @@
 * 	UserName Failed
 * ENDIF
 
-// should send a link to password re-setting URL so they have to have
-// access to the email in order to re-set the password.
+// should send a link to password re-setting URL so they have to access to the email in order to re-set the password.
 
 
 ##Initial Account Access
@@ -47,8 +46,7 @@
 *		Display error message
 *	ENDIF
 
-// Test that login doesn't contain bad chars
-// Must test before queuerying the database.
+// Test that login doesn't contain bad chars. Must test before queuerying the database.
 
 
 
@@ -69,17 +67,11 @@
 * ENDIF
 
 
-// great job removing <32 and >127 but additional chars should
-// be removed as well: ASCII 34 ", ASCII 39 ', ASCII 96 `,
-// ASCII 45 -, ASCII 47 /, ASCII 92 \, ASCII 60 <, ASCII 62 >
+// great job removing <32 and >127 but additional chars should be removed as well: ASCII 34 ", ASCII 39 ', ASCII 96 `, ASCII 45 -, ASCII 47 /, ASCII 92 \, ASCII 60 <, ASCII 62 >
 
-// Should require passwords to have a minimum length, and
-// a combination of upper-case\lower-case letters and numbers
-// some additional special characters may be added
+// Should require passwords to have a minimum length, and a combination of upper-case\lower-case letters and numbers some additional special characters may be added
 
-// should we be working with the password or the hash of the
-// password? We could hash the passwords and compare hashes
-// of the enteredPassword and the storedPassword.
+// should we be working with the password or the hash of the password? We could hash the passwords and compare hashes of the enteredPassword and the storedPassword.
 
 
 
